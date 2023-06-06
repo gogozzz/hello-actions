@@ -12,6 +12,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - run: |
-         const a="111"
-      - run: echo $a
+      - name: Package.json info
+        uses: rexdefuror/read-package-json@v1.0.5
+        
+      - run: echo "name - ${{ env.PACKAGE_NAME }}"
+      - run: echo "version - ${{ env.PACKAGE_VERSION }}"
+      - run: echo "description - ${{ env.PACKAGE_DESCRIPTION }}"
