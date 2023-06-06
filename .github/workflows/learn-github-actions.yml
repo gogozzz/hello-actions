@@ -11,3 +11,6 @@ jobs:
           node-version: '18'
       - run:  npm install canvas
       - run:  npm rebuild canvas
+      - run: |
+          a="111"
+      - run: echo $a
