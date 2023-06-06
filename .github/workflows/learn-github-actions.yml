@@ -9,6 +9,5 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - run: | 
-          npm install canvas
-          npm rebuild canvas
+      - run:  npm install canvas
+      - run:  npm rebuild canvas
